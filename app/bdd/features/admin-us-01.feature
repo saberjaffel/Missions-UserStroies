@@ -17,7 +17,6 @@ Fonctionnalité: Création d'un nouveau utilisateur
    Contexte:
      Etant donné que j'ai déjà créer les utilisateurs suivant:
       | Nom      | Prénom        | Profil         | Email                                |
-      |----------|---------------|----------------|--------------------------------------|
       | User0Nom | User0Prenom   | Administrateur | User0Prenom.User0Nom@missions.local  |
       | User1Nom | User1Prenom   | Manager        | User1Prenom.User1Nom@missions.local  |
       | User2Nom | User2Prenom   | Collaborateur  | User2Prenom.User2Nom@missions.local  |
@@ -35,6 +34,5 @@ Fonctionnalité: Création d'un nouveau utilisateur
 
      Examples:
        | Email                               | Message                                                   |
-       |-------------------------------------|-----------------------------------------------------------|
        | User3Prenom.User3Nom@missions.local | Un nouveau manager est crée avec succès.                  |
        | User1Prenom.User1Nom@missions.local | Echec. Un manager possédant cet email est déjà existant ! |
